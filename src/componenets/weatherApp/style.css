@@ -1,10 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .container{
-    width: 50vmax;
-    height: 800px;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 20px;
+    width: 50vw;
+    height: 100%;
     background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+   overflow-y: hidden;
 }
 .top-bar{
     display: flex;
@@ -14,8 +17,8 @@
 }
 .top-bar input{
     display: flex;
-    width: 100vmin;
-    height: 8vmin;
+    width: 50%;
+    height: 6vh;
     background: #ebfffc;
     border: none;
     outline: none;
@@ -31,7 +34,7 @@
     justify-content: center;
     align-items: center;
     width: 8vmin;
-    height: 8vmin;
+    height: 6vh;
     background: #ebfffc ;
     border-radius: 40px;
     cursor: pointer;
@@ -87,19 +90,22 @@
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
     
     .container{
-        width: 100vmin;
+        width: 100%;
+        overflow:hidden;
     }
+    
     .top-bar input{
-        width: 50vmin;
+        width:40%;
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 450px) {
     .container {
-        width: 80vmax;
-        height: 50vmin;
+        width:100%;
+        height: 100vh;
     }
+    
 }
